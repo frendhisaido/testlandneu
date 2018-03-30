@@ -1,2 +1,15 @@
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="{{ root }}js/app.js"></script>
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="{{ root }}js/app.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#second-section-carousel').slick({
+            centerMode: true,
+            variableWidth: false,
+            focusOnSelect: true,
+            centerPadding: '0px',
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    });
+</script>
